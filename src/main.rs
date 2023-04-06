@@ -1,30 +1,55 @@
-fn main() {
-  //  println!("Hello, world!");
-//video 1-3
-// let two=2;//int
-// let hello= "hello ";//string
-// let j='j';//car
-// let my_half=4.5;//float/doublke
-// let mut mane="joy";//mutable
-// let qait=false;//boolain
-// let k=j;//j='j';
+use std::result;
 
-let x= add(1,1);
-println!("x {}",x);
-let y=add(2,3);
-println!("y {}",y);
-let z=add(x,y);
-println!("z {}",z);
-macros();
+//video6
+fn ifelse(){
+  let a=120;
+
+  if a>99{
+    println!("big number");
+    if a>200{
+      println!("huge number");
+    }else{
+      println!("not huge number");
+    }
+
+  }
+  else {
+      println!("small number");
+  }
 }
-//vodeo-4
-fn add(a:i32 ,b:i32) ->i32 {
+//video8
+// fn lop(){
+//   let mut a=0;
+//   loop{
+//     if a==5{
+//       break;
+//     }
+//     println!("{:?}",a);
+//     a= a + 1;
+//   }
+// }
+//video 12
+fn add(a:i32, b:i32)->i32{
   a+b
 }
-//video 5
-fn macros(){
-    let life=42;
-    println!("hello");
-    println!("life={}",life);
-    println!("{:?} {:?}",life,life);
+fn display(result:i32){
+  println!("total={}",result);
 }
+//video14
+fn bools(){
+  let my_bool=false;
+  if my_bool==true{
+    println!("Hello");
+  }else {
+      println!("Good bye!!");
+  }
+}
+
+fn main() {
+  bools();
+  //ifelse();
+//fn lop();
+// let result=add(3,4);
+// display(result);
+
+ }
